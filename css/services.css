@@ -1,10 +1,10 @@
 /* =========================================
-   SERVICES PAGE STYLES
+   SERVICES PAGE STYLES (SVG Update)
    ========================================= */
 
 /* 1. Header Section */
 .services-header {
-    padding: 140px 0 60px; /* Spacing for fixed nav */
+    padding: 140px 0 60px;
     background: #f8fafc;
     text-align: center;
     border-bottom: 1px solid var(--divider-color);
@@ -43,12 +43,36 @@
     margin-bottom: 30px;
 }
 
+/* The Icon Wrapper */
 .category-icon {
-    font-size: 2rem;
-    background: #f1f5f9;
-    width: 50px; height: 50px;
-    display: flex; align-items: center; justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #f1f5f9; /* Light Grey BG */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
+    /* Subtle border */
+    border: 1px solid var(--divider-color);
+    transition: transform 0.3s ease;
+}
+
+/* The SVG itself */
+.category-icon svg {
+    width: 30px;
+    height: 30px;
+    color: var(--primary); /* Brand Teal */
+}
+
+/* Hover Effect on Icon */
+.service-category:hover .category-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.service-category:hover .category-icon svg {
+    color: #ffffff; /* Turn white on hover */
 }
 
 .category-title h2 {
