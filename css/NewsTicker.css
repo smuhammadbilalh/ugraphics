@@ -1,0 +1,30 @@
+.news-ticker-bar {
+    display: flex;
+    background-color: #ffffff;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    width: 100%; overflow: hidden;
+    margin: 0;
+}
+
+.ticker-label {
+    /* Updated to Teal */
+    background-color: #295450; 
+    color: #ffffff;
+    padding: 0 25px;
+    height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.95rem; z-index: 5;
+    white-space: nowrap; min-width: 140px;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+.ticker-content {
+    flex: 1; height: 100%; overflow: hidden;
+    color: #000000; font-weight: 600; font-size: 1rem;
+    display: flex; align-items: center;
+}
+
+.ticker-item { margin-right: 50px; display: inline-flex; align-items: center; gap: 10px; }
+.ticker-item strong { color: #295450; text-transform: uppercase; }

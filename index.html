@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGraphics | Creative Design Agency</title>
+    
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/NavMenu.css">
+    <link rel="stylesheet" href="css/NewsTicker.css">
+    <link rel="stylesheet" href="css/ProfileCarousel.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <div class="glass-nav-container">
+        <nav class="glass-navbar">
+            <div class="nav-brand">
+                <a href="#" class="brand-link">
+                    <img src="Images/logo.svg" alt="UGraphics Logo" class="brand-logo">
+                    <span class="brand-text">UGraphics</span>
+                </a>
+            </div>
+
+         <ul class="nav-links">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="developers.html">The Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+            <div class="nav-socials">
+                <div class="divider-line"></div>
+                <a href="#" class="social-btn whatsapp" title="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>
+                </a>
+                <a href="#" class="social-btn facebook" title="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg>
+                </a>
+            </div>
+
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-header">
+            <span class="mobile-brand-text">UGraphics</span>
+            <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+        </div>
+        <a href="#" onclick="closeMobileMenu()">Home</a>
+        <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+        <a href="#services" onclick="closeMobileMenu()">Services</a>
+        <a href="#team" onclick="closeMobileMenu()">Team</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        <div class="mobile-socials">
+            <a href="#" class="social-btn whatsapp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg></a>
+            <a href="#" class="social-btn facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg></a>
+        </div>
+    </div>
+
+    <div class="home-wrapper">
+        <section class="hero-slider">
+            <div class="slider-container" id="sliderContainer">
+                
+                <div class="slide active">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2700&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <span class="badge">Innovation</span>
+                        <h1>Visual Impact.</h1>
+                        <p>We craft digital experiences that define brands and captivate audiences.</p>
+                        <a href="#contact" class="btn-primary">Start a Project</a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2700&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <span class="badge">Branding</span>
+                        <h1>Identity First.</h1>
+                        <p>Logos, colors, and voices that speak louder than words.</p>
+                        <a href="#services" class="btn-primary">Our Services</a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2700&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <span class="badge">Strategy</span>
+                        <h1>Data Driven.</h1>
+                        <p>Marketing strategies that actually convert.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="slider-controls-wrapper">
+                <button class="slider-arrow" onclick="prevSlide()">❮</button>
+                <div class="slider-dots">
+                    <button class="dot active" onclick="goToSlide(0)"></button>
+                    <button class="dot" onclick="goToSlide(1)"></button>
+                    <button class="dot" onclick="goToSlide(2)"></button>
+                </div>
+                <button class="slider-arrow" onclick="nextSlide()">❯</button>
+            </div>
+
+            <div class="hero-bottom-ticker">
+                <div class="news-ticker-bar">
+                    <div class="ticker-label">LATEST</div>
+                    <div class="ticker-content">
+                        <marquee behavior="scroll" direction="left" scrollamount="6">
+                            <span class="ticker-item"><strong>NEW:</strong> UGraphics 2.0 Website Launched!</span>
+                            <span class="ticker-item"><strong>OFFER:</strong> Get 20% off on your first Branding Package.</span>
+                            <span class="ticker-item"><strong>HIRE:</strong> We are hiring UI/UX Designers. Apply Now!</span>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="stats-bar">
+            <div class="container stats-grid">
+                <div class="stat-item highlight">
+                    <strong>150+</strong> <span>Projects Done</span>
+                </div>
+                <div class="stat-item">
+                    <strong>98%</strong> <span>Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <strong>50+</strong> <span>Brands Built</span>
+                </div>
+                <div class="stat-item">
+                    <strong>24/7</strong> <span>Support</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="portals-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our <span class="accent-text">Services</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="square-grid">
+                    <a href="#" class="square-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                        </div>
+                        <h3>Logo Design</h3>
+                    </a>
+                    <a href="#" class="square-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                    </a>
+                    <a href="#" class="square-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                        </div>
+                        <h3>Video Editing</h3>
+                    </a>
+                    <a href="#" class="square-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        </div>
+                        <h3>Social Marketing</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section-container" id="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet The <span class="accent-text">Team</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="profile-carousel-wrapper">
+                    <button class="carousel-arrow prev" onclick="moveTeam(-1)">❮</button>
+                    
+                    <div class="carousel-track-container">
+                        <div class="carousel-track" id="teamTrack">
+                            
+                            <div class="carousel-card">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" alt="Muhammad Bilal">
+                                </div>
+                                <div class="card-content">
+                                    <h3>Muhammad Bilal</h3>
+                                    <span class="role">Lead Developer</span>
+                                    <p class="bio">Expert in C#, Blazor, and Web Solutions.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-card">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" alt="Sarah Jenkins">
+                                </div>
+                                <div class="card-content">
+                                    <h3>Sarah Jenkins</h3>
+                                    <span class="role">Creative Director</span>
+                                    <p class="bio">Award-winning designer focused on brand identity.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-card">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" alt="David Ross">
+                                </div>
+                                <div class="card-content">
+                                    <h3>David Ross</h3>
+                                    <span class="role">Marketing Head</span>
+                                    <p class="bio">Strategist focused on growth and digital engagement.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-card">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" alt="Michael Chen">
+                                </div>
+                                <div class="card-content">
+                                    <h3>Michael Chen</h3>
+                                    <span class="role">SEO Specialist</span>
+                                    <p class="bio">Ensuring your brand ranks at the top of search results.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-card">
+                                <div class="image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" alt="Emily Davis">
+                                </div>
+                                <div class="card-content">
+                                    <h3>Emily Davis</h3>
+                                    <span class="role">Content Writer</span>
+                                    <p class="bio">Crafting compelling narratives that sell.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow next" onclick="moveTeam(1)">❯</button>
+                </div>
+
+                <div class="team-dots" id="teamDots"></div>
+            </div>
+        </section>
+
+       <section class="video-hero full-screen">
+        <video class="video-bg" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_25fps.mp4" type="video/mp4" />
+        </video>
+        
+        <div class="video-overlay"></div>
+
+        <div class="hero-bottom-ticker">
+            <div class="news-ticker-bar">
+                <div class="ticker-label">DEVELOPER</div>
+                <div class="ticker-content">
+                    <marquee behavior="scroll" direction="left" scrollamount="6">
+                        <span class="ticker-item">
+                            <strong>Muhammad Bilal:</strong> IT Specialist & WinUI/Blazor Expert.
+                        </span>
+                        <span class="ticker-item">
+                            <strong>Contact:</strong> +92 325 5806291.
+                        </span>
+                        <span class="ticker-item">
+                            <strong>Status:</strong> Available for Freelance Projects.
+                        </span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div> <footer class="modern-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-col">
+                    <h3>UGraphics</h3>
+                    <p>Elevating brands through superior design and cutting-edge technology. Let's create something extraordinary together.</p>
+                    
+                    <div class="social-section-title">Connect with us:</div>
+                    <div class="social-icons">
+                        <a href="#" class="social-link whatsapp" title="Chat on WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>
+                        </a>
+                        <a href="#" class="social-link facebook" title="Follow on Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><span>&#9993;</span> info@ugraphics.com</li>
+                        <li><span>&#9742;</span> +92 325 5806291</li>
+                        <li><span>&#128205;</span> GT Road, Sarai Alamgir</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="copyright-bar">
+            &copy; 2025 UGraphics. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // --- 1. Mobile Menu ---
+        function toggleMobileMenu() {
+            document.getElementById('mobileNav').classList.toggle('active');
+            document.getElementById('mobileOverlay').classList.toggle('active');
+        }
+        function closeMobileMenu() {
+            document.getElementById('mobileNav').classList.remove('active');
+            document.getElementById('mobileOverlay').classList.remove('active');
+        }
+
+        // --- 2. Hero Slider ---
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slider .slide');
+        const dots = document.querySelectorAll('.hero-slider .dot');
+        
+        function showSlide(index) {
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+            
+            if(index >= slides.length) currentSlide = 0;
+            else if(index < 0) currentSlide = slides.length - 1;
+            else currentSlide = index;
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        function nextSlide() { showSlide(currentSlide + 1); }
+        function prevSlide() { showSlide(currentSlide - 1); }
+        function goToSlide(n) { showSlide(n); }
+        setInterval(nextSlide, 5000);
+
+        // --- 3. DYNAMIC TEAM CAROUSEL ---
+        let teamIndex = 0;
+        const teamTrack = document.getElementById('teamTrack');
+        const teamCards = document.querySelectorAll('.carousel-card');
+        const teamDotsContainer = document.getElementById('teamDots');
+        
+        // Auto-Generate Dots based on Member Count
+        function initTeamDots() {
+            teamDotsContainer.innerHTML = ''; // Clear existing
+            teamCards.forEach((_, idx) => {
+                const dot = document.createElement('button');
+                dot.className = idx === 0 ? 't-dot active' : 't-dot';
+                dot.onclick = () => goToTeamSlide(idx);
+                teamDotsContainer.appendChild(dot);
+            });
+        }
+
+        function updateTeamTrack() {
+            // Get width of one card + the gap (30px defined in CSS)
+            // We calculate this dynamically so it works on mobile and desktop
+            const cardStyle = window.getComputedStyle(teamCards[0]);
+            const cardWidth = teamCards[0].offsetWidth;
+            const gap = parseFloat(cardStyle.marginRight) || 30; // 30px is our CSS gap
+            
+            const moveAmount = (cardWidth + gap) * teamIndex;
+            teamTrack.style.transform = `translateX(-${moveAmount}px)`;
+
+            // Update Dots Active State
+            const allDots = document.querySelectorAll('.t-dot');
+            allDots.forEach(d => d.classList.remove('active'));
+            if(allDots[teamIndex]) allDots[teamIndex].classList.add('active');
+        }
+
+        function moveTeam(direction) {
+            // Simple loop logic
+            const total = teamCards.length;
+            teamIndex = (teamIndex + direction + total) % total;
+            updateTeamTrack();
+        }
+
+        function goToTeamSlide(n) {
+            teamIndex = n;
+            updateTeamTrack();
+        }
+
+        // Initialize on Load
+        window.addEventListener('load', () => {
+            initTeamDots();
+            // Recalculate on resize to fix widths
+            window.addEventListener('resize', updateTeamTrack);
+        });
+    </script>
+</body>
+</html>

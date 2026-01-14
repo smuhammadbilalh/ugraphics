@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | UGraphics</title>
+    
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/NavMenu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+    <div class="glass-nav-container">
+        <nav class="glass-navbar">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="Images/logo.svg" alt="UGraphics Logo" class="brand-logo">
+                    <span class="brand-text">UGraphics</span>
+                </a>
+            </div>
+
+        <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="#" class="active">Services</a></li>
+    <li><a href="developers.html">The Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+            <div class="nav-socials">
+                <div class="divider-line"></div>
+                <a href="#" class="social-btn whatsapp" title="WhatsApp">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg></a>
+                <a href="#" class="social-btn facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg></a>
+            </div>
+            
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-header">
+            <span class="mobile-brand-text">UGraphics</span>
+            <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+        </div>
+        <a href="index.html" onclick="closeMobileMenu()">Home</a>
+        <a href="portfolio.html" onclick="closeMobileMenu()">Portfolio</a>
+        <a href="#" class="active" onclick="closeMobileMenu()">Services</a>
+        <a href="index.html#team" onclick="closeMobileMenu()">Team</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        <div class="mobile-socials">
+            <a href="#" class="social-btn whatsapp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg></a>
+            <a href="#" class="social-btn facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg></a>
+        </div>
+    </div>
+
+    <header class="services-header">
+        <div class="container">
+            <h1 class="animate-up">Our Capabilities</h1>
+            <p class="animate-up delay-1">Comprehensive design, development, and digital strategies tailored for modern brands.</p>
+        </div>
+    </header>
+
+    <section class="services-section">
+        <div class="container">
+            
+            <div class="service-category">
+                <div class="category-title">
+                    <span class="category-icon">✨</span>
+                    <h2>Identity & Branding</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Logo Design</h3>
+                        <p>Memorable, scalable logos that define your brand's essence and stand out in any medium.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Visual Identity</h3>
+                        <p>Complete style guides including typography, color palettes, and usage rules for consistency.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Rebranding</h3>
+                        <p>Strategic modernization of existing brands to align with current market trends and goals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider-soft"></div>
+
+            <div class="service-category">
+                <div class="category-title">
+                    <span class="category-icon">💻</span>
+                    <h2>Digital & Web</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>UI/UX Design</h3>
+                        <p>User-centric interfaces for websites and apps that prioritize intuitive navigation and engagement.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>Responsive, fast, and SEO-optimized websites built on modern frameworks or CMS platforms.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>E-Commerce</h3>
+                        <p>Custom online stores designed to convert visitors into loyal customers with seamless checkout.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider-soft"></div>
+
+            <div class="service-category">
+                <div class="category-title">
+                    <span class="category-icon">🚀</span>
+                    <h2>Marketing & Social</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Social Media Kits</h3>
+                        <p>Custom templates for Instagram, Facebook, and LinkedIn to keep your feed professional.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Ad Creatives</h3>
+                        <p>High-converting visuals for PPC campaigns, display ads, and social media promotions.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Email Design</h3>
+                        <p>Beautiful, responsive email newsletters that drive clicks and maintain brand voice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider-soft"></div>
+
+            <div class="service-category">
+                <div class="category-title">
+                    <span class="category-icon">🎬</span>
+                    <h2>Motion & Multimedia</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Video Editing</h3>
+                        <p>Professional cuts, color grading, and audio mixing for corporate or social video content.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Motion Graphics</h3>
+                        <p>Animated logos, explainer videos, and kinetic typography to bring static assets to life.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>3D Design</h3>
+                        <p>Product rendering and 3D visualisations that add depth and realism to your campaigns.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="modern-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UGraphics</h3>
+                    <p>Elevating brands through superior design and cutting-edge technology. Let's create something extraordinary together.</p>
+                    <div class="social-section-title">Connect with us:</div>
+                    <div class="social-icons">
+                        <a href="#" class="social-link whatsapp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg></a>
+                        <a href="#" class="social-link facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><span>&#9993;</span> info@ugraphics.com</li>
+                        <li><span>&#9742;</span> +92 325 5806291</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="copyright-bar">
+            &copy; 2025 UGraphics. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobileNav').classList.toggle('active');
+            document.getElementById('mobileOverlay').classList.toggle('active');
+        }
+        function closeMobileMenu() {
+            document.getElementById('mobileNav').classList.remove('active');
+            document.getElementById('mobileOverlay').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

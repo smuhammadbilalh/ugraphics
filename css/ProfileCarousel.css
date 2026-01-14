@@ -1,0 +1,73 @@
+.team-section-container {
+    padding: 60px 0; background: #ffffff; overflow: hidden;
+}
+
+.profile-carousel-wrapper {
+    position: relative; max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.carousel-track-container {
+    overflow: hidden; max-width: 1000px; width: 100%; padding: 20px 5px;
+}
+
+.carousel-track {
+    display: flex; gap: 30px; transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    width: max-content;
+}
+
+.carousel-card {
+    width: 300px; flex-shrink: 0;
+    background: #fff;
+    /* Grey Border */
+    border: 1px solid #e2e8f0; 
+    border-radius: 12px; padding: 30px 20px;
+    text-align: center; display: flex; flex-direction: column; align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.carousel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #295450; /* Teal Border on Hover */
+}
+
+.image-wrapper {
+    width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin-bottom: 20px;
+    border: 3px solid #295450; /* Teal Border around Image */
+}
+.image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+.card-content h3 { margin: 0; font-size: 1.25rem; color: #295450; font-weight: 700; }
+
+.role {
+    display: block; color: #8f9193; /* Grey Role */
+    font-weight: 700; font-size: 0.9rem; margin: 5px 0 10px; text-transform: uppercase;
+}
+.bio { color: #8f9193; font-size: 0.95rem; line-height: 1.5; }
+
+/* CONTROLS */
+.carousel-arrow {
+    background: #f1f5f9; border: none; width: 44px; height: 44px; flex-shrink: 0;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 1.2rem; color: #295450;
+    transition: all 0.2s; z-index: 10;
+}
+.carousel-arrow:hover { background: #295450; color: white; }
+.carousel-arrow.prev { margin-right: 15px; }
+.carousel-arrow.next { margin-left: 15px; }
+
+.team-dots { display: flex; justify-content: center; gap: 8px; margin-top: 30px; flex-wrap: wrap; }
+.t-dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid #295450; background: transparent;
+    cursor: pointer; padding: 0; transition: all 0.3s;
+}
+.t-dot.active { background: #295450; transform: scale(1.2); }
+
+@media (max-width: 768px) {
+    .carousel-track-container { max-width: 320px; }
+    .carousel-card { width: 300px; }
+    .carousel-arrow { display: none; }
+}

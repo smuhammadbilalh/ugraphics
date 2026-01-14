@@ -1,0 +1,212 @@
+/* =========================================
+   DEVELOPERS PAGE STYLES
+   ========================================= */
+
+/* 1. Header Section */
+.dev-header {
+    padding: 140px 0 60px;
+    background: #f8fafc;
+    text-align: center;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.dev-header h1 {
+    font-size: 3.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.dev-header p {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 2. Profile Sections */
+.profile-section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.profile-section.alt-bg {
+    background: #f8fafc;
+    border-top: 1px solid var(--divider-color);
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.profile-wrapper.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+/* 3. Visual Side (Image) */
+.profile-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img-frame {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.img-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.img-frame:hover img {
+    transform: scale(1.05);
+}
+
+/* Decorative Borders */
+.frame-teal { border: 10px solid var(--primary); }
+.frame-grey { border: 10px solid var(--secondary); }
+
+/* 4. Content Side */
+.profile-content {
+    flex: 1.2;
+}
+
+.role-badge {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.profile-content h2 {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.bio-text {
+    font-size: 1.1rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* 5. Skills & Tech Stack */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-item span {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 4px;
+    transform-origin: left;
+    animation: growBar 1.5s ease-out forwards;
+}
+
+/* Tech Pills (For Developer) */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tech-pill {
+    padding: 8px 16px;
+    background: #ffffff;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    transition: all 0.3s;
+}
+
+.tech-pill:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Divider */
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background: var(--divider-color);
+}
+
+/* Animations */
+@keyframes growBar {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-up { animation: fadeInUp 0.8s ease forwards; }
+.delay-1 { animation-delay: 0.2s; opacity: 0; }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .profile-wrapper, 
+    .profile-wrapper.reverse-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .profile-visual { order: 1; }
+    .profile-content { order: 2; }
+
+    .skills-grid { text-align: left; }
+    .tech-stack { justify-content: center; }
+    
+    .img-frame { width: 300px; height: 380px; }
+    
+    .profile-content h2 { font-size: 2.5rem; }
+}

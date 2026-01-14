@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership & Developers | UGraphics</title>
+    
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/NavMenu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/developers.css">
+    <link rel="stylesheet" href="css/ProfileCarousel.css">
+</head>
+<body>
+
+    <div class="glass-nav-container">
+        <nav class="glass-navbar">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="Images/logo.svg" alt="UGraphics Logo" class="brand-logo">
+                    <span class="brand-text">UGraphics</span>
+                </a>
+            </div>
+
+          <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="#" class="active">The Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+            <div class="nav-socials">
+                <div class="divider-line"></div>
+                <a href="#" class="social-btn whatsapp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg></a>
+                <a href="#" class="social-btn facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg></a>
+            </div>
+            
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-header">
+            <span class="mobile-brand-text">UGraphics</span>
+            <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+        </div>
+        <a href="index.html" onclick="closeMobileMenu()">Home</a>
+        <a href="portfolio.html" onclick="closeMobileMenu()">Portfolio</a>
+        <a href="services.html" onclick="closeMobileMenu()">Services</a>
+        <a href="#" class="active" onclick="closeMobileMenu()">The Team</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        <div class="mobile-socials">
+            <a href="#" class="social-btn whatsapp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg></a>
+            <a href="#" class="social-btn facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg></a>
+        </div>
+    </div>
+
+    <header class="dev-header">
+        <div class="container">
+            <h1 class="animate-up">Vision & Execution</h1>
+            <p class="animate-up delay-1">Meet the minds driving innovation at UGraphics.</p>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-wrapper">
+                
+                <div class="profile-visual">
+                    <div class="img-frame frame-teal">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop" alt="Uzair Mehboob">
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="role-badge">Owner & Founder</div>
+                    <h2>Uzair Mehboob</h2>
+                    <p class="bio-text">
+                        As the creative force behind UGraphics, Uzair brings a unique blend of artistic vision and strategic leadership. With years of experience in graphic design and brand development, he ensures that every pixel serves a purpose. His passion lies in transforming abstract concepts into tangible visual identities that resonate with audiences.
+                    </p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span>Graphic Design</span>
+                            <div class="progress-bar"><div class="fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Brand Strategy</span>
+                            <div class="progress-bar"><div class="fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Adobe Suite</span>
+                            <div class="progress-bar"><div class="fill" style="width: 98%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="profile-section alt-bg">
+        <div class="container">
+            <div class="profile-wrapper reverse-layout">
+                
+                <div class="profile-content">
+                    <div class="role-badge">Lead Developer & IT Specialist</div>
+                    <h2>Muhammad Bilal</h2>
+                    <p class="bio-text">
+                        Muhammad Bilal is the technological architect of UGraphics. Specializing in high-performance web and desktop applications, he bridges the gap between design and functionality. An expert in the .NET ecosystem, Blazor, and modern web frameworks, Bilal builds scalable, secure, and blazing-fast digital solutions.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span class="tech-pill">C# .NET</span>
+                        <span class="tech-pill">Blazor WASM</span>
+                        <span class="tech-pill">WinUI 3</span>
+                        <span class="tech-pill">HTML/CSS/JS</span>
+                        <span class="tech-pill">SQL Server</span>
+                        <span class="tech-pill">Azure</span>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span>Full Stack Development</span>
+                            <div class="progress-bar"><div class="fill" style="width: 96%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>System Architecture</span>
+                            <div class="progress-bar"><div class="fill" style="width: 92%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>App Development</span>
+                            <div class="progress-bar"><div class="fill" style="width: 88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-visual">
+                    <div class="img-frame frame-grey">
+                        <img src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?q=80&w=600&auto=format&fit=crop" alt="Muhammad Bilal">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="team-section-container" id="more-team">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Wider <span class="accent-text">Network</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="profile-carousel-wrapper">
+                <button class="carousel-arrow prev" onclick="moveTeam(-1)">❮</button>
+                
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="teamTrack">
+                        
+                        <div class="carousel-card">
+                            <div class="image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" alt="Muhammad Bilal">
+                            </div>
+                            <div class="card-content">
+                                <h3>Muhammad Bilal</h3>
+                                <span class="role">Lead Developer</span>
+                                <p class="bio">Expert in C#, Blazor, and Web Solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-card">
+                            <div class="image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" alt="Sarah Jenkins">
+                            </div>
+                            <div class="card-content">
+                                <h3>Sarah Jenkins</h3>
+                                <span class="role">Creative Director</span>
+                                <p class="bio">Award-winning designer focused on brand identity.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-card">
+                            <div class="image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" alt="David Ross">
+                            </div>
+                            <div class="card-content">
+                                <h3>David Ross</h3>
+                                <span class="role">Marketing Head</span>
+                                <p class="bio">Strategist focused on growth and digital engagement.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-card">
+                            <div class="image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" alt="Michael Chen">
+                            </div>
+                            <div class="card-content">
+                                <h3>Michael Chen</h3>
+                                <span class="role">SEO Specialist</span>
+                                <p class="bio">Ensuring your brand ranks at the top of search results.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-card">
+                            <div class="image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" alt="Emily Davis">
+                            </div>
+                            <div class="card-content">
+                                <h3>Emily Davis</h3>
+                                <span class="role">Content Writer</span>
+                                <p class="bio">Crafting compelling narratives that sell.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-arrow next" onclick="moveTeam(1)">❯</button>
+            </div>
+
+            <div class="team-dots" id="teamDots"></div>
+        </div>
+    </section>
+
+    <footer class="modern-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UGraphics</h3>
+                    <p>Elevating brands through superior design and cutting-edge technology.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-link whatsapp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg></a>
+                        <a href="#" class="social-btn facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.428l-.342 3.667h-3.086v7.98c-.453.076-1.522.247-2.922.247-1.127 0-1.685-.052-1.922-.095z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><span>&#9993;</span> info@ugraphics.com</li>
+                        <li><span>&#9742;</span> +92 325 5806291</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="copyright-bar">
+            &copy; 2025 UGraphics. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // --- 1. Mobile Menu ---
+        function toggleMobileMenu() {
+            document.getElementById('mobileNav').classList.toggle('active');
+            document.getElementById('mobileOverlay').classList.toggle('active');
+        }
+        function closeMobileMenu() {
+            document.getElementById('mobileNav').classList.remove('active');
+            document.getElementById('mobileOverlay').classList.remove('active');
+        }
+
+        // --- 2. DYNAMIC TEAM CAROUSEL ---
+        let teamIndex = 0;
+        const teamTrack = document.getElementById('teamTrack');
+        const teamCards = document.querySelectorAll('.carousel-card');
+        const teamDotsContainer = document.getElementById('teamDots');
+        
+        // Auto-Generate Dots based on Member Count
+        function initTeamDots() {
+            if(!teamTrack) return; // Guard clause in case element missing
+            teamDotsContainer.innerHTML = ''; 
+            teamCards.forEach((_, idx) => {
+                const dot = document.createElement('button');
+                dot.className = idx === 0 ? 't-dot active' : 't-dot';
+                dot.onclick = () => goToTeamSlide(idx);
+                teamDotsContainer.appendChild(dot);
+            });
+        }
+
+        function updateTeamTrack() {
+            if(!teamTrack || teamCards.length === 0) return;
+            
+            // Get width of one card + the gap (30px defined in CSS)
+            const cardStyle = window.getComputedStyle(teamCards[0]);
+            const cardWidth = teamCards[0].offsetWidth;
+            const gap = parseFloat(cardStyle.marginRight) || 30;
+            
+            const moveAmount = (cardWidth + gap) * teamIndex;
+            teamTrack.style.transform = `translateX(-${moveAmount}px)`;
+
+            // Update Dots Active State
+            const allDots = document.querySelectorAll('.t-dot');
+            allDots.forEach(d => d.classList.remove('active'));
+            if(allDots[teamIndex]) allDots[teamIndex].classList.add('active');
+        }
+
+        function moveTeam(direction) {
+            const total = teamCards.length;
+            teamIndex = (teamIndex + direction + total) % total;
+            updateTeamTrack();
+        }
+
+        function goToTeamSlide(n) {
+            teamIndex = n;
+            updateTeamTrack();
+        }
+
+        // Initialize on Load
+        window.addEventListener('load', () => {
+            initTeamDots();
+            window.addEventListener('resize', updateTeamTrack);
+        });
+    </script>
+</body>
+</html>
