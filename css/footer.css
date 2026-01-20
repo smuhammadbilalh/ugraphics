@@ -9,9 +9,9 @@
 }
 
 .footer-grid {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 60px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
     margin-bottom: 50px;
 }
 
@@ -25,17 +25,17 @@
     display: inline-block;
 }
 
-/* Divider under heading */
-.footer-col h3::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 40px;
-    height: 3px;
-    background: #295450;
-    border-radius: 2px;
-}
+    /* Divider under heading */
+    .footer-col h3::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 40px;
+        height: 3px;
+        background: #295450;
+        border-radius: 2px;
+    }
 
 .footer-col p {
     line-height: 1.6;
@@ -55,6 +55,7 @@
 .social-icons {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap; /* Ensure they wrap on very small screens */
 }
 
 .social-link {
@@ -70,28 +71,39 @@
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.social-link svg {
-    width: 22px;
-    height: 22px;
-}
+    .social-link svg {
+        width: 20px; /* Adjusted slightly for consistency */
+        height: 20px;
+        fill: currentColor;
+    }
 
-/* Hover Effects - Brand Colors */
-.social-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(41, 84, 80, 0.15);
-}
+    /* Hover Effects - Brand Colors */
+    .social-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(41, 84, 80, 0.15);
+        color: white; /* Make icon white on hover */
+        border-color: transparent;
+    }
 
-.social-link.whatsapp:hover {
-    background: #25D366; 
-    color: white;
-    border-color: #25D366;
-}
+    .social-link.facebook:hover {
+        background: #1877F2;
+    }
 
-.social-link.facebook:hover {
-    background: #1877F2; 
-    color: white;
-    border-color: #1877F2;
-}
+    .social-link.instagram:hover {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    .social-link.tiktok:hover {
+        background: #000000;
+    }
+
+    .social-link.whatsapp:hover {
+        background: #25D366;
+    }
+
+    .social-link.linkedin:hover {
+        background: #0077b5;
+    }
 
 /* Contact List */
 .contact-list {
@@ -99,19 +111,19 @@
     padding: 0;
 }
 
-.contact-list li {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: #555;
-    font-weight: 500;
-}
+    .contact-list li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #555;
+        font-weight: 500;
+    }
 
-.contact-list li span {
-    color: #295450; /* Teal Icons */
-    font-size: 1.2rem;
-}
+        .contact-list li span {
+            color: #295450; /* Teal Icons */
+            font-size: 1.2rem;
+        }
 
 /* Footer Bottom */
 .footer-divider {
