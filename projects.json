@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "category": "branding",
+        "image": "Images/heropic1.jpg",
+        "title": "Corporate Identity"
+    },
+    {
+        "id": 2,
+        "category": "web",
+        "image": "Images/heropic2.jpg",
+        "title": "E-Commerce UI"
+    },
+    {
+        "id": 3,
+        "category": "marketing",
+        "image": "Images/heropic3.jpg",
+        "title": "Social Campaign"
+    },
+    {
+        "id": 4,
+        "category": "branding",
+        "image": "Images/heropic1.jpg",
+        "title": "Minimalist Brand"
+    },
+    {
+        "id": 5,
+        "category": "web",
+        "image": "Images/heropic2.jpg",
+        "title": "Tech Dashboard"
+    },
+    {
+        "id": 6,
+        "category": "marketing",
+        "image": "Images/heropic3.jpg",
+        "title": "Product Launch"
+    },
+    {
+        "id": 7,
+        "category": "web",
+        "image": "Images/heropic1.jpg",
+        "title": "App Design"
+    }
+]
