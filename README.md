@@ -4,10 +4,10 @@
 
 ### A bold, image-led marketing site for a branding & design studio
 
-[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-GitHub%20Pages-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white)](https://smuhammadbilalh.github.io/ugraphics/)
-[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
-[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)](#)
-[![Responsive](https://img.shields.io/badge/Responsive-Mobile%20First-0078D4?style=for-the-badge)](#)
+[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-GitHub%20Pages-0a0a0a?style=for-the-badge&logo=googlechrome&logoColor=fafafa)](https://smuhammadbilalh.github.io/ugraphics/)
+[![HTML](https://img.shields.io/badge/HTML5-0a0a0a?style=for-the-badge&logo=html5&logoColor=fafafa)](#)
+[![CSS](https://img.shields.io/badge/CSS3-0a0a0a?style=for-the-badge&logo=css&logoColor=fafafa)](#)
+[![Responsive](https://img.shields.io/badge/Responsive-Mobile%20First-0a0a0a?style=for-the-badge)](#)
 
 <a href="https://smuhammadbilalh.github.io/ugraphics/"><img src="docs/screenshot.jpg" alt="UGraphics homepage" width="90%"/></a>
 
@@ -60,9 +60,9 @@ python3 -m http.server 8080   # then open http://localhost:8080
 
 **Muhammad Bilal** — IT Specialist & App Developer · Gujrat, Pakistan
 
-[![GitHub](https://img.shields.io/badge/GitHub-smuhammadbilalh-181717?style=for-the-badge&logo=github)](https://github.com/smuhammadbilalh)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-muhammadbilaltech-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/muhammadbilaltech)
-[![Email](https://img.shields.io/badge/Email-smuhammadbilalh%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:smuhammadbilalh@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-smuhammadbilalh-0a0a0a?style=for-the-badge&logo=github)](https://github.com/smuhammadbilalh)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-muhammadbilaltech-0a0a0a?style=for-the-badge)](https://www.linkedin.com/in/muhammadbilaltech)
+[![Email](https://img.shields.io/badge/Email-smuhammadbilalh%40gmail.com-0a0a0a?style=for-the-badge&logo=gmail&logoColor=fafafa)](mailto:smuhammadbilalh@gmail.com)
 
 ⭐ If this project helped you, please consider giving it a star!
 
